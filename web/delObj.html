@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function del()
+        {
+            var oLi=document.getElementsByTagName('li');
+            oLi[oLi.length-1].parentNode.removeChild(oLi[oLi.length-1]);
+        }
+    </script>
+</head>
+<body>
+   <input type="button" value="del " onclick="del()"/>
+   <ul>
+       <li>spring</li>
+       <li>summer</li>
+       <li>autumn</li>
+       <li>winter</li>
+   </ul>
+
+</body>
+</html>

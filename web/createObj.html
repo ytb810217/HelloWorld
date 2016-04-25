@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function create()
+        {
+            var oLi=document.createElement('li');
+            var txt=document.createTextNode("how are you")
+
+            document.getElementsByTagName('ul')[0].appendChild(oLi);
+            oLi.appendChild(txt);
+
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="create " onclick="create()"/>
+    <ul>
+        <li>spring</li>
+        <li>summer</li>
+        <li>autumn</li>
+        <li>winter</li>
+    </ul>
+
+</body>
+</html>
