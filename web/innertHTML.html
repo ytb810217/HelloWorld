@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="button" value="add 1 2  3" onclick="add3()"/>
+<input type="button" value="add  4" onclick="add1()"/>
+<ul></ul>
+</body>
+<script>
+    function add3()
+    {
+        var oUl=document.getElementsByTagName('ul')[0];
+        oUl.innerHTML="<li>1</li><li>2</li><li>3</li>";
+
+
+    }
+    function add1()
+    {
+        var oUl=document.getElementsByTagName('ul')[0];
+      // alert(oUl.innerHTML);
+        //oUl.innerHTML="<li>1</li><li>2</li><li>3</li>";
+        oUl.innerHTML+="<li>4</li>";
+
+    }
+</script>
+</html>

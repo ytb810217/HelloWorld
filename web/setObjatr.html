@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {width:200px;height:200px;border-bottom:1px solid black;}
+        .div1 {background:green;}
+        .div2 {background:red;}
+    </style>
+    <script>
+        function getSty(obj, attr)
+        {
+            //return obj.currentStyle ? obj.currentStyle[attr] : getComputedStyle(obj , null)[attr];
+           return  obj.currentStyle ? obj.currentStyle[attr] : getComputedStyle(obj,null)[attr];
+        }
+        function change()
+        {
+            var oDiv1=document.getElementsByTagName('div')[0];
+            if(oDiv1.className.indexOf('div1')>=0)
+            {
+                oDiv1.className='div2';
+            }
+            else
+            {
+                oDiv1.classname='div1';
+            }
+           // alert(getSty( div ,"height"));
+
+            oDiv1.style.width=parseInt(oDiv1.currentStyle['width'])+5+"px";
+            oDiv1.style.height=parseInt(oDiv1.currentStyle['height'])+5+"px";
+            //oDiv1.style.borderBottomWidth=parseInt(getSty( div ,"borderBottomWidth"))+1+"px";
+
+        }
+    </script>
+</head>
+<body>
+<div class="div1" onclick="change()" >
+</div>
+
+
+</body>
+</html>

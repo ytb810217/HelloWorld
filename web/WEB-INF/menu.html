@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var area=[['zhaoyang','haiding','tongzhou'],['huanshan','heifeng']];
+
+        function ld()
+        {   opt="";
+           var oSel=document.getElementById('prov');
+            var oSel2=document.getElementById('city');
+            if(oSel.value=="-1"){oSel2.innerHTML=opt;return;}
+            len=area[oSel.value].length;
+            for(var i=0;i<len;i++)
+            {
+                opt=opt+'<option value="'+i+'">'+area[oSel.value][i]+'</option>';
+            }
+
+            oSel2.innerHTML=opt;
+        }
+    </script>
+</head>
+<body>
+    <select name="" id="prov" onchange="ld()">
+        <option value="-1">please select</option>
+        <option value="0">beijing</option>
+        <option value="1">anhui</option>
+    </select>
+    <select name="" id="city" >
+
+    </select>
+</body>
+</html>

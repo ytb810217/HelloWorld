@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .div1 {background:green;}
+        .div2 {background:red;}
+    </style>
+    <script>
+        function change()
+        {
+            var oDiv1=document.getElementsByTagName('div')[0];
+            if(oDiv1.className.indexOf('div1')>=0)
+            {
+                oDiv1.className='div2';
+            }
+            else
+            {
+                oDiv1.classname='div1';
+            }
+            oDiv1.style.width=parseInt(oDiv1.style.width)+5+"px";
+            oDiv1.style.height=parseInt(oDiv1.style.height)+5+"px";
+            oDiv1.style.borderBottomWidth=parseInt(oDiv1.style.borderBottomWidth)+1+"px";
+
+        }
+    </script>
+</head>
+<body>
+   <div class="div1" onclick="change()" style="width:200px;height:200px;border-bottom:1px solid black;" >
+
+   </div>
+
+
+</body>
+</html>

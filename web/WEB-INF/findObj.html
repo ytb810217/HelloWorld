@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+   <h1>findObj</h1>
+   <div id="div1">
+       <p>dd</p>
+       <p>ddd</p>
+       <p>dd</p>
+   </div>
+   <div class="div2" style="width:100px;height:100px;background:green;"></div>
+   <input type="text" name="username" id="" value="jack"/>
+</body>
+<script>
+
+   console.log(document.getElementById("div1"));
+   // alert(document.getElementsByTagName("p"));
+   //alert(document.getElementsByTagName("p").length);
+ //  alert(document.getElementsByTagName("h1").length);
+   document.getElementsByTagName("p")[1].style.background='green';
+   // p[1].style.background="red";
+  document.getElementsByName("username")[0].value="juie";
+    document.getElementsByClassName("div2")[0].style.background="red";
+   alert(document.getElementById("div1").children.length);
+    document.getElementsByTagName('p')[0].parentNode.style.border="2px solid blue";
+
+</script>
+</html>

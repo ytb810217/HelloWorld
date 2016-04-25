@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div1 {
+            width:100px;
+            height:100px;
+            background: red;
+        }
+
+    </style>
+    <script>
+        function getWidth()
+        {
+            var oDiv=document.getElementById('div1');
+            oDiv.style.width=parseInt(oDiv.style.width)+200+'px';
+        }
+        function get(obj,atr)
+        {
+            (obj.currentStyle)?obj.currentStyle.width
+        }
+    </script>
+</head>
+<body>
+  <div id="div1" onclick="getWidth()" >
+
+  </div>
+</body>
+</html>
