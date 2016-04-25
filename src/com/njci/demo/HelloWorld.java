@@ -9,5 +9,6 @@ public class HelloWorld {
         //J2SE
         //J2EE
         //J2ME
+System.out.println("Hello world22!");
     }
 }
